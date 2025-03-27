@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario HTML</title>
+    <title>Formulário HTML</title>
 </head>
 <body>
     <form action="#">
         <fieldset>
-            <label for="name" id="name">Nome:</label>
-            <input type="text" placeholder="Digite o nome completo">
+            <legend>Cadastro</legend>
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite o nome completo" required>
             <br>
 
-            <label for="email" id="email">E-mail:</label>
-            <input type="email" placeholder="Digite seu melhor E-mail">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu melhor e-mail" required>
             <br>
 
-            <label for="password" id="passaword">Senha:</label>
-            <input type="password">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
             <br>
 
-            <label for="password" id="passaword">Digite a senha novamente:</label>
-            <input type="password">
+            <label for="confirm-password">Digite a senha novamente:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <br>
 
             <button type="submit">Cadastrar</button>
         </fieldset>
